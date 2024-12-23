@@ -152,3 +152,8 @@ class Api:
 
     def stop_record(self):
         return self.do_request("method", "stop_record")
+
+    def delete_file(self, local_path):
+        post_data = {"file_name_path": local_path}
+
+        return self.do_request("method", "delete_file", post_data=True)
