@@ -156,4 +156,4 @@ class Api:
     def delete_file(self, local_path):
         post_data = {"file_name_path": local_path}
 
-        return self.do_request("method", "delete_file", post_data=post_data)
+        return self.do_request("method", "delete_file", post=post_data)
